@@ -1,27 +1,26 @@
-# JobBuddy AI
-
-
+# CareerPath (formerly JobBuddy AI)
 
 <p align="center">
   <img
     src="./Job-buddy-ai/public/JobBuddy-ai-banner.png"
-    alt="JobBuddy AI - AI-powered career and job search platform"
+    alt="CareerPath - AI-powered career assessments, testing and job matching platform"
     width="100%"
   />
 </p>
 
 ## Overview
 
-JobBuddy AI is a full-stack web application built to simplify the modern job-search process.
+CareerPath is a comprehensive career acceleration and skill assessment platform built for students and job seekers.
 
-Instead of switching between multiple platforms and manually managing applications, JobBuddy AI brings important parts of the job-search workflow into one workspace.
+Instead of switching between multiple platforms, CareerPath brings skill tests, AI-driven progress evaluation, resume parsing, job discovery, and application tracking together into one seamless workspace.
 
-The platform is being developed with a focus on:
+The platform is focused on:
 
-- Resume understanding
+- **AI Skill Assessments & Career Readiness Tests**
+- **AI-Powered Progress Analysis & Recommendations**
+- Resume understanding and profile extraction
 - Candidate profile management
-- Job discovery
-- Job search and filtering
+- Job discovery & search filtering
 - Skill-based job matching
 - Saved jobs
 - Application tracking

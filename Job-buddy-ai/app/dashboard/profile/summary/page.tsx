@@ -118,7 +118,7 @@ export default async function SummaryPage() {
 
           <p className="mt-3 max-w-2xl text-base leading-7 text-slate-400">
             Create a strong professional summary that helps
-            JobBuddy AI understand your experience, strengths,
+            CareerPath understand your experience, strengths,
             and career direction.
           </p>
         </div>
@@ -143,8 +143,8 @@ export default async function SummaryPage() {
 
             <p className="mt-1 text-xs leading-5 text-slate-500">
               Your professional summary is associated with your
-              authenticated JobBuddy AI account and is used to
-              improve your job-search and matching experience.
+              authenticated CareerPath account and is used to
+              improve your career development and matching experience.
             </p>
           </div>
         </div>

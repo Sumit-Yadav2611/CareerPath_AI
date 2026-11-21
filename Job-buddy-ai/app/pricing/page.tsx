@@ -11,6 +11,7 @@ import {
 const freeFeatures = [
   "Create your professional profile",
   "Upload and analyze your resume",
+  "Skill tests with AI progress analysis",
   "Discover relevant job opportunities",
   "AI-powered job matching",
   "Save jobs",
@@ -20,6 +21,7 @@ const freeFeatures = [
 const premiumFeatures = [
   "Everything in Free",
   "Advanced AI job matching",
+  "AI-generated custom skill tests",
   "Smarter resume intelligence",
   "Priority career insights",
   "Advanced application workflow",
@@ -60,7 +62,7 @@ export default function PricingPage() {
             </div>
 
             <span className="text-lg font-semibold tracking-tight">
-              JobBuddy <span className="text-red-500">AI</span>
+              CareerPath <span className="text-red-500">AI</span>
             </span>
           </Link>
 
@@ -285,8 +287,8 @@ export default function PricingPage() {
           </h2>
 
           <p className="mx-auto mt-6 max-w-xl text-base leading-7 text-slate-500">
-            Start building your professional profile today and let JobBuddy AI
-            help you move toward better opportunities.
+            Start building your professional profile today and let CareerPath
+            help you move toward better opportunities and career growth.
           </p>
 
           <Link

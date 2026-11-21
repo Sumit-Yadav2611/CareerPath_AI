@@ -115,7 +115,7 @@ export default function Features() {
           {/* Description */}
           <p className="mx-auto mt-7 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base sm:leading-8">
             From understanding your resume to tracking every application,
-            JobBuddy AI helps you manage the entire job search in one place.
+            CareerPath helps you manage your entire career journey in one place.
           </p>
 
           {/* Small divider */}
@@ -214,7 +214,7 @@ export default function Features() {
                     <div className="h-px w-8 bg-red-500/25 transition-all duration-500 group-hover:w-14 group-hover:bg-red-400/70" />
 
                     <span className="text-[10px] uppercase tracking-[0.2em] text-slate-600 transition-colors duration-300 group-hover:text-red-400/60">
-                      JobBuddy AI
+                      CareerPath
                     </span>
                   </div>
                 </div>

@@ -130,7 +130,7 @@ export default async function EducationPage() {
             </div>
 
             <p className="mt-3 text-xs text-slate-500">
-              Academic records in your JobBuddy AI profile
+              Academic records in your CareerPath profile
             </p>
           </div>
 
@@ -144,7 +144,7 @@ export default async function EducationPage() {
             </p>
 
             <p className="mt-2 text-xs leading-5 text-slate-500">
-              Education details help JobBuddy AI understand your
+              Education details help CareerPath understand your
               qualifications when evaluating opportunities.
             </p>
           </div>

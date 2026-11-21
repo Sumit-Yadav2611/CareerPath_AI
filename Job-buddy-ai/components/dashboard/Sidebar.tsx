@@ -12,6 +12,8 @@ import {
   LogOut,
   Sparkles,
   ChevronRight,
+  GraduationCap,
+  MessageSquareText,
 } from "lucide-react";
 import { useClerk } from "@clerk/nextjs";
 import { useEffect, useState } from "react";
@@ -22,6 +24,16 @@ const navigation = [
     name: "Jobs",
     href: "/dashboard/jobs",
     icon: BriefcaseBusiness,
+  },
+  {
+    name: "Skill Tests",
+    href: "/dashboard/tests",
+    icon: GraduationCap,
+  },
+  {
+    name: "Interview Prep",
+    href: "/dashboard/interview",
+    icon: MessageSquareText,
   },
   {
     name: "Saved Jobs",
@@ -113,7 +125,7 @@ export default function Sidebar() {
          * Use the user's local calendar day.
          *
          * This is important because "today" should mean today
-         * for the person using JobBuddy, not UTC midnight.
+         * for the person using CareerPath, not UTC midnight.
          */
         const now = new Date();
 
@@ -266,7 +278,7 @@ export default function Sidebar() {
 
           <div className="leading-none">
             <div className="text-[17px] font-semibold tracking-tight text-white">
-              JobBuddy
+              CareerPath
               <span className="bg-gradient-to-r from-red-400 to-rose-500 bg-clip-text text-transparent">
                 {" "}
                 AI

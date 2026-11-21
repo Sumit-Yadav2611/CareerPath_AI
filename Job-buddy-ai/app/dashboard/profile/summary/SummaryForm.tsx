@@ -96,7 +96,7 @@ export default function SummaryForm({
               </h2>
 
               <p className="mt-1 max-w-2xl text-sm leading-6 text-slate-400">
-                Tell employers and JobBuddy AI about your
+                Tell employers and CareerPath about your
                 professional background, strengths, goals, and
                 what you bring to a role.
               </p>
@@ -156,7 +156,7 @@ export default function SummaryForm({
             <p className="mt-2 text-xs leading-6 text-slate-400">
               Mention your strongest technical skills, areas of
               expertise, relevant experience, and the types of
-              roles you want. This gives JobBuddy AI more useful
+              roles you want. This gives CareerPath more useful
               context when evaluating opportunities.
             </p>
           </div>
@@ -182,7 +182,7 @@ export default function SummaryForm({
           <div className="mt-8 flex flex-col gap-4 border-t border-white/5 pt-6 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-xs leading-5 text-slate-500">
               Your professional summary is securely stored in
-              your JobBuddy AI profile.
+              your CareerPath profile.
             </p>
 
             <button

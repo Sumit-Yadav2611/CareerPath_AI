@@ -12,11 +12,11 @@ export default function LoginPage() {
             href="/"
             className="text-2xl font-bold tracking-tight"
           >
-            JobBuddy<span className="text-primary"> AI</span>
+            CareerPath<span className="text-primary"> AI</span>
           </Link>
 
           <p className="mt-3 text-sm text-muted-foreground">
-            Welcome back. Sign in to continue your job search.
+            Welcome back. Sign in to continue your career journey.
           </p>
 
         </div>

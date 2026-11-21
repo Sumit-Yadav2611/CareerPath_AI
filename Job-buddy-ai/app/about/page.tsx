@@ -16,7 +16,7 @@ const principles = [
     number: "01",
     title: "AI With Purpose",
     description:
-      "JobBuddy AI uses intelligent matching and resume understanding to help you focus on opportunities that actually fit your profile.",
+      "CareerPath uses intelligent matching, skill assessments, and resume understanding to help you focus on opportunities that actually fit your profile.",
   },
   {
     icon: Target,
@@ -107,7 +107,7 @@ export default function AboutPage() {
             </div>
 
             <span className="text-lg font-semibold tracking-tight text-white">
-              JobBuddy{" "}
+              CareerPath{" "}
               <span className="text-red-500">AI</span>
             </span>
           </Link>
@@ -152,7 +152,7 @@ export default function AboutPage() {
             </span>
 
             <span className="text-[10px] font-medium uppercase tracking-[0.32em] text-red-400">
-              About JobBuddy AI
+              About CareerPath
             </span>
           </div>
 
@@ -167,9 +167,9 @@ export default function AboutPage() {
 
           {/* Description */}
           <p className="mx-auto mt-9 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg">
-            JobBuddy AI is an intelligent career workspace designed to help
-            job seekers discover relevant opportunities, understand their
-            profile, apply smarter, and track their progress.
+            CareerPath is an intelligent career workspace designed to help
+            job seekers and students test their skills, discover relevant opportunities,
+            understand their profile, apply smarter, and track their progress.
           </p>
 
           {/* Actions */}
@@ -186,7 +186,7 @@ export default function AboutPage() {
               href="/"
               className="group inline-flex h-12 items-center justify-center gap-2 rounded-xl border border-red-500/15 bg-white/[0.025] px-7 text-sm font-medium text-slate-300 transition-all duration-300 hover:-translate-y-1 hover:border-red-500/35 hover:bg-red-500/[0.055] hover:text-white"
             >
-              Explore JobBuddy
+              Explore CareerPath
               <ArrowRight className="h-4 w-4 opacity-50 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100" />
             </Link>
           </div>
@@ -264,7 +264,7 @@ export default function AboutPage() {
               </p>
 
               <p className="mt-6 text-lg leading-8 text-slate-500 sm:text-xl">
-                JobBuddy AI brings those pieces together into one intelligent
+                CareerPath brings those pieces together into one intelligent
                 workspace so you can make better decisions and move toward the
                 opportunities that matter.
               </p>
@@ -297,7 +297,7 @@ export default function AboutPage() {
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-slate-500 sm:text-lg">
-              Every part of JobBuddy AI is designed around making your career
+              Every part of CareerPath is designed around making your career
               search clearer, more focused, and easier to manage.
             </p>
           </div>
@@ -377,7 +377,7 @@ export default function AboutPage() {
 
               <p className="mx-auto mt-7 max-w-2xl text-base leading-7 text-slate-500 sm:text-lg">
                 Build your profile, discover matching jobs, and start managing
-                your career search with JobBuddy AI.
+                your career search with CareerPath.
               </p>
 
               <Link

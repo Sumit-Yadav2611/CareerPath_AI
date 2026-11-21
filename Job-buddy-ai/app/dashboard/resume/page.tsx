@@ -105,9 +105,9 @@ export default async function ResumePage() {
             </h2>
 
             <p className="mt-4 max-w-2xl text-sm leading-6 text-slate-500 sm:text-base">
-              Upload your resume and let JobBuddy AI understand your
+              Upload your resume and let CareerPath understand your
               experience, skills, education, and projects to create a stronger
-              profile for job matching.
+              profile for job matching and skill assessments.
             </p>
 
             {/* Feature pills */}
@@ -149,7 +149,7 @@ export default async function ResumePage() {
               </h2>
 
               <p className="mt-1 text-sm text-slate-600">
-                Your resume powers your personalized JobBuddy AI experience.
+                Your resume powers your personalized CareerPath experience.
               </p>
             </div>
           </div>
@@ -184,8 +184,8 @@ export default async function ResumePage() {
             </h2>
 
             <p className="mt-1 text-sm text-slate-600">
-              JobBuddy AI turns your resume into a profile built for better
-              job discovery.
+              CareerPath turns your resume into a profile built for better
+              job discovery and skill evaluation.
             </p>
           </div>
 
@@ -194,7 +194,7 @@ export default async function ResumePage() {
               number="01"
               icon={FileText}
               title="Extract"
-              description="JobBuddy AI reads your resume and identifies your professional experience, skills, education, and projects."
+              description="CareerPath reads your resume and identifies your professional experience, skills, education, and projects."
               accent="cyan"
             />
 
@@ -235,7 +235,7 @@ export default async function ResumePage() {
                   </p>
 
                   <p className="mt-1 text-xs leading-5 text-slate-600">
-                    Upload a PDF or DOCX file. JobBuddy AI uses the extracted
+                    Upload a PDF or DOCX file. CareerPath uses the extracted
                     information to personalize your experience.
                   </p>
                 </div>

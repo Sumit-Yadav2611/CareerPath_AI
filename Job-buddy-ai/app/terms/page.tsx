@@ -15,17 +15,17 @@ const termsSections = [
     icon: CheckCircle2,
     title: "Acceptance of Terms",
     content: [
-      "By accessing or using JobBuddy AI, you agree to these Terms of Service and our Privacy Policy.",
+      "By accessing or using CareerPath, you agree to these Terms of Service and our Privacy Policy.",
       "If you do not agree with these terms, please do not use the platform.",
-      "You must use JobBuddy AI only for lawful purposes and in accordance with these terms.",
+      "You must use CareerPath only for lawful purposes and in accordance with these terms.",
     ],
   },
   {
     number: "02",
     icon: FileText,
-    title: "Using JobBuddy AI",
+    title: "Using CareerPath",
     content: [
-      "JobBuddy AI provides tools for resume management, job discovery, job matching, application tracking, and related career workflows.",
+      "CareerPath provides tools for skill tests, AI progress analysis, resume management, job discovery, job matching, application tracking, and related career workflows.",
       "You are responsible for the information you provide to the platform and for reviewing information generated or recommended by our AI features.",
       "You agree not to misuse the service, interfere with its operation, or attempt to access areas of the platform that you are not authorized to use.",
     ],
@@ -43,10 +43,10 @@ const termsSections = [
   {
     number: "04",
     icon: Scale,
-    title: "AI & Job Information",
+    title: "AI, Tests & Job Information",
     content: [
-      "JobBuddy AI may use automated systems to analyze resumes, profiles, job descriptions, and application-related information.",
-      "AI-generated recommendations are intended to assist your decision-making and should not be treated as a guarantee of employment, interviews, or application success.",
+      "CareerPath may use automated systems to evaluate tests, analyze resumes, profiles, job descriptions, and application-related information.",
+      "AI-generated recommendations and test assessments are intended to assist your decision-making and learning, and should not be treated as a guarantee of employment, interviews, or application success.",
       "Job availability, descriptions, requirements, compensation, and application processes may change and may be controlled by third-party employers or job platforms.",
     ],
   },
@@ -55,8 +55,8 @@ const termsSections = [
     icon: FileText,
     title: "Your Content",
     content: [
-      "You retain ownership of the content and information you submit to JobBuddy AI, including your resume and professional profile information.",
-      "You grant JobBuddy AI the limited permission necessary to process that information to provide the features and services you request.",
+      "You retain ownership of the content and information you submit to CareerPath, including your resume and professional profile information.",
+      "You grant CareerPath the limited permission necessary to process that information to provide the features and services you request.",
       "You should only upload or submit information that you have the right to use and share.",
     ],
   },
@@ -65,9 +65,9 @@ const termsSections = [
     icon: ShieldCheck,
     title: "Third-Party Services",
     content: [
-      "JobBuddy AI may connect with or provide links to third-party websites, job platforms, authentication providers, payment providers, or other services.",
+      "CareerPath may connect with or provide links to third-party websites, job platforms, authentication providers, payment providers, or other services.",
       "Third-party services operate under their own terms and privacy policies.",
-      "JobBuddy AI is not responsible for the content, availability, security, or practices of third-party services.",
+      "CareerPath is not responsible for the content, availability, security, or practices of third-party services.",
     ],
   },
   {
@@ -75,7 +75,7 @@ const termsSections = [
     icon: Scale,
     title: "Subscriptions & Payments",
     content: [
-      "Certain JobBuddy AI features may require a paid subscription.",
+      "Certain CareerPath features may require a paid subscription.",
       "Subscription pricing, billing periods, and available features will be presented before you complete a purchase.",
       "Subscriptions may be subject to cancellation and billing rules displayed during checkout or within your account.",
     ],
@@ -85,7 +85,7 @@ const termsSections = [
     icon: ShieldCheck,
     title: "Service Availability",
     content: [
-      "We aim to keep JobBuddy AI reliable and available, but we do not guarantee uninterrupted or error-free operation.",
+      "We aim to keep CareerPath reliable and available, but we do not guarantee uninterrupted or error-free operation.",
       "Features may occasionally be changed, updated, temporarily unavailable, or discontinued.",
       "We may perform maintenance or improvements that temporarily affect availability.",
     ],
@@ -125,7 +125,7 @@ export default function TermsPage() {
             </div>
 
             <span className="text-lg font-semibold tracking-tight">
-              JobBuddy{" "}
+              CareerPath{" "}
               <span className="text-red-500">AI</span>
             </span>
           </Link>
@@ -174,7 +174,7 @@ export default function TermsPage() {
           </h1>
 
           <p className="mx-auto mt-8 max-w-2xl text-base leading-8 text-slate-500 sm:text-lg">
-            The rules and guidelines that help keep JobBuddy AI useful,
+            The rules and guidelines that help keep CareerPath useful,
             reliable, and fair for everyone using the platform.
           </p>
 
@@ -196,19 +196,19 @@ export default function TermsPage() {
               </div>
 
               <h2 className="mt-7 text-2xl font-semibold text-white sm:text-3xl">
-                Welcome to JobBuddy AI
+                Welcome to CareerPath
               </h2>
 
               <p className="mt-5 text-base leading-8 text-slate-400">
                 These Terms of Service explain the rules for accessing and
-                using JobBuddy AI. Our goal is to provide an intelligent
-                workspace that helps you discover opportunities, understand
-                your professional profile, manage applications, and organize
-                your job search.
+                using CareerPath. Our goal is to provide an intelligent
+                workspace that helps you evaluate skills, discover opportunities,
+                understand your professional profile, manage applications, and organize
+                your career journey.
               </p>
 
               <p className="mt-5 text-base leading-8 text-slate-500">
-                By using JobBuddy AI, you acknowledge that you have read,
+                By using CareerPath, you acknowledge that you have read,
                 understood, and agreed to these terms.
               </p>
             </div>
@@ -232,7 +232,7 @@ export default function TermsPage() {
 
             <p className="mt-6 max-w-xl text-base leading-7 text-slate-500">
               Please review the following sections to understand how
-              JobBuddy AI works and what is expected when using the platform.
+              CareerPath works and what is expected when using the platform.
             </p>
           </div>
 
@@ -305,15 +305,15 @@ export default function TermsPage() {
               </div>
 
               <p className="mt-7 text-lg leading-8 text-slate-400">
-                JobBuddy AI is designed to support your career decisions, not
-                replace them. Always review job information, application
+                CareerPath is designed to support your career decisions, not
+                replace them. Always review test information, job listings, application
                 details, AI-generated content, and recommendations before
                 taking action.
               </p>
 
               <p className="mt-6 text-lg leading-8 text-slate-500">
                 By using the platform responsibly, you help maintain a better
-                experience for yourself and the wider JobBuddy AI community.
+                experience for yourself and the wider CareerPath community.
               </p>
             </div>
           </div>
@@ -339,7 +339,7 @@ export default function TermsPage() {
 
               <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-500">
                 Create your profile, discover relevant jobs, and manage your
-                career search with JobBuddy AI.
+                career search with CareerPath.
               </p>
 
               <Link

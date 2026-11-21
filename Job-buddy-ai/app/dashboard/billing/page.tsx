@@ -105,8 +105,8 @@ export default async function BillingPage() {
               </h1>
 
               <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-400 sm:text-base">
-                Unlock advanced AI-powered job matching and application
-                assistance with JobBuddy Premium.
+                Unlock advanced AI-powered career tests, job matching and application
+                assistance with CareerPath Premium.
               </p>
             </div>
 
@@ -277,7 +277,7 @@ export default async function BillingPage() {
 
               <p className="mt-1 text-sm leading-6 text-slate-500">
                 Your payment details will be handled securely by Stripe.
-                JobBuddy does not store your card information.
+                CareerPath does not store your card information.
               </p>
             </div>
           </div>

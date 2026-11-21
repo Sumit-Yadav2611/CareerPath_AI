@@ -3,9 +3,9 @@ import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "JobBuddy AI",
+  title: "CareerPath - AI Career Platform & Skill Assessments",
   description:
-    "AI-powered job search, matching, applications, and tracking.",
+    "AI-powered career workspace, skill tests, progress analysis, job matching, and applications.",
 };
 
 export default function RootLayout({

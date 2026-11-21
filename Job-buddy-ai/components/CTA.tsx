@@ -117,7 +117,7 @@ export default function CTA() {
 
             {/* Description */}
             <p className="mx-auto mt-7 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base sm:leading-8">
-              Let JobBuddy AI handle the repetitive parts of your job search
+              Let CareerPath handle the repetitive parts of your job search
               while you focus on preparing for the opportunities that matter.
             </p>
 

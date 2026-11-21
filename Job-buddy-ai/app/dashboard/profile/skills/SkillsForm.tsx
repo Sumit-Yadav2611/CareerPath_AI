@@ -190,7 +190,7 @@ export default function SkillsForm({
               <p className="mt-1 max-w-2xl text-sm leading-6 text-slate-400">
                 Add the technologies, tools, and professional skills
                 that best represent your experience. These skills help
-                JobBuddy AI match you with relevant opportunities.
+                CareerPath match you with relevant opportunities.
               </p>
             </div>
           </div>

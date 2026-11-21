@@ -16,8 +16,8 @@ const privacySections = [
     number: "01",
     title: "Information We Collect",
     content: [
-      "When you use JobBuddy AI, we may collect information you provide while creating your account, building your professional profile, uploading your resume, saving jobs, and tracking applications.",
-      "This may include your name, email address, professional experience, education, skills, projects, resume information, saved jobs, and application activity.",
+      "When you use CareerPath, we may collect information you provide while creating your account, building your professional profile, taking skill tests, uploading your resume, saving jobs, and tracking applications.",
+      "This may include your name, email address, professional experience, education, skills, projects, resume information, test results, saved jobs, and application activity.",
       "We also collect basic technical information required to operate, secure, and improve the platform.",
     ],
   },
@@ -26,18 +26,18 @@ const privacySections = [
     number: "02",
     title: "How We Use Your Information",
     content: [
-      "Your information is used to provide and improve the JobBuddy AI experience.",
-      "This includes creating your professional profile, understanding resume information, matching you with relevant opportunities, organizing saved jobs, and helping you track applications.",
+      "Your information is used to provide and improve the CareerPath experience.",
+      "This includes creating your professional profile, understanding resume information, processing test assessments, matching you with relevant opportunities, organizing saved jobs, and helping you track applications.",
       "We may also use information to maintain platform security, troubleshoot problems, and improve our services.",
     ],
   },
   {
     icon: Sparkles,
     number: "03",
-    title: "AI & Resume Processing",
+    title: "AI, Test & Resume Processing",
     content: [
-      "JobBuddy AI may process information from your resume and professional profile to provide AI-powered features such as resume understanding, profile extraction, and job matching.",
-      "AI-generated results are intended to assist your job search and should be reviewed by you before making important career decisions.",
+      "CareerPath may process information from your resume, skill tests, and professional profile to provide AI-powered features such as resume understanding, test evaluation, progress analysis, and job matching.",
+      "AI-generated results are intended to assist your learning and career search and should be reviewed by you before making important career decisions.",
       "We aim to process only the information necessary to provide the requested functionality.",
     ],
   },
@@ -46,7 +46,7 @@ const privacySections = [
     number: "04",
     title: "Data Security",
     content: [
-      "We take reasonable technical and organizational measures to protect information stored and processed through JobBuddy AI.",
+      "We take reasonable technical and organizational measures to protect information stored and processed through CareerPath.",
       "Access to account and career information is designed to be limited to authorized systems and services.",
       "However, no online service can guarantee absolute security, so users should also take reasonable steps to protect their accounts.",
     ],
@@ -56,9 +56,9 @@ const privacySections = [
     number: "05",
     title: "Your Choices",
     content: [
-      "You can review and update information in your JobBuddy AI profile through the platform.",
-      "You can manage saved jobs and application information through your account.",
-      "If you have questions about your information or want to request changes, you can contact the JobBuddy AI team.",
+      "You can review and update information in your CareerPath profile through the platform.",
+      "You can manage saved jobs, test history, and application information through your account.",
+      "If you have questions about your information or want to request changes, you can contact the CareerPath team.",
     ],
   },
   {
@@ -66,7 +66,7 @@ const privacySections = [
     number: "06",
     title: "Third-Party Services",
     content: [
-      "JobBuddy AI may rely on trusted third-party services for authentication, hosting, databases, AI processing, payments, and other infrastructure required to operate the platform.",
+      "CareerPath may rely on trusted third-party services for authentication, hosting, databases, AI processing, payments, and other infrastructure required to operate the platform.",
       "These services may process information only as necessary to provide their respective functionality.",
       "Third-party services have their own privacy policies and terms that may also apply to their processing of information.",
     ],
@@ -109,7 +109,7 @@ export default function PrivacyPage() {
             </div>
 
             <span className="text-lg font-semibold tracking-tight">
-              JobBuddy <span className="text-red-500">AI</span>
+              CareerPath <span className="text-red-500">AI</span>
             </span>
           </Link>
 
@@ -159,7 +159,7 @@ export default function PrivacyPage() {
           </h1>
 
           <p className="mx-auto mt-8 max-w-2xl text-base leading-8 text-slate-500 sm:text-lg">
-            This Privacy Policy explains how JobBuddy AI collects, uses,
+            This Privacy Policy explains how CareerPath collects, uses,
             protects, and manages information when you use our career
             workspace.
           </p>
@@ -196,8 +196,8 @@ export default function PrivacyPage() {
               </div>
 
               <p className="mt-7 text-lg leading-8 text-slate-400">
-                JobBuddy AI is designed around helping you manage your career
-                search without making your personal information unnecessarily
+                CareerPath is designed around helping you manage your career
+                search and skill growth without making your personal information unnecessarily
                 complicated.
               </p>
 
@@ -293,7 +293,7 @@ export default function PrivacyPage() {
               </h2>
 
               <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-500">
-                If you have questions about how JobBuddy AI handles your
+                If you have questions about how CareerPath handles your
                 information, please reach out to the team.
               </p>
 
@@ -301,7 +301,7 @@ export default function PrivacyPage() {
                 href="/"
                 className="group mt-9 inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-white px-7 text-sm font-semibold text-black shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-red-500 hover:text-white hover:shadow-[0_0_40px_rgba(255,40,40,0.25)]"
               >
-                Return to JobBuddy AI
+                Return to CareerPath
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>

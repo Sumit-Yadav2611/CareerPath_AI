@@ -354,3 +354,81 @@ export const jobMatches = pgTable("job_matches", {
 
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
+
+/* =========================
+   CAREER TESTS
+========================= */
+
+export const tests = pgTable("tests", {
+  id: uuid("id").defaultRandom().primaryKey(),
+
+  slug: text("slug").notNull().unique(),
+
+  title: text("title").notNull(),
+
+  category: text("category").notNull(),
+
+  difficulty: text("difficulty").notNull().default("Intermediate"),
+
+  description: text("description").notNull(),
+
+  durationMinutes: integer("duration_minutes").notNull().default(20),
+
+  totalQuestions: integer("total_questions").notNull().default(10),
+
+  passingScore: integer("passing_score").notNull().default(70),
+
+  skillsCovered: text("skills_covered").notNull(), // JSON string array of skills
+
+  questions: text("questions").notNull(), // JSON string array of Question items
+
+  isPublished: boolean("is_published").default(true).notNull(),
+
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
+/* =========================
+   TEST ATTEMPTS & AI PROGRESS
+========================= */
+
+export const testAttempts = pgTable("test_attempts", {
+  id: uuid("id").defaultRandom().primaryKey(),
+
+  userId: uuid("user_id")
+    .notNull()
+    .references(() => users.id, {
+      onDelete: "cascade",
+    }),
+
+  testId: uuid("test_id").references(() => tests.id, {
+    onDelete: "set null",
+  }),
+
+  testTitle: text("test_title").notNull(),
+
+  category: text("category").notNull(),
+
+  difficulty: text("difficulty").notNull(),
+
+  score: real("score").notNull(), // 0 to 100 percentage
+
+  totalQuestions: integer("total_questions").notNull(),
+
+  correctAnswers: integer("correct_answers").notNull(),
+
+  timeSpentSeconds: integer("time_spent_seconds").notNull().default(0),
+
+  userAnswers: text("user_answers").notNull(), // JSON string of { [qId]: selectedOptionIndex }
+
+  questionsSnapshot: text("questions_snapshot").notNull(), // JSON string snapshot of questions
+
+  aiAnalysis: text("ai_analysis").notNull(), // JSON string of complete AI progress analysis report
+
+  status: text("status").notNull().default("completed"),
+
+  completedAt: timestamp("completed_at").defaultNow().notNull(),
+
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});

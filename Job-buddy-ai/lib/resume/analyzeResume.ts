@@ -59,7 +59,7 @@ export async function analyzeResume(
   const ai = getGeminiClient();
 
   const prompt = `
-You are JobBuddy AI's resume analysis engine.
+You are CareerPath's resume analysis engine.
 
 Analyze the resume below carefully.
 

@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { currentUser } from "@clerk/nextjs/server";
-import { eq, and } from "drizzle-orm";
+import { auth } from "@clerk/nextjs/server";
+import { eq } from "drizzle-orm";
 
 import { db } from "@/lib/db";
 import {
@@ -19,9 +19,9 @@ export const runtime = "nodejs";
 
 export async function POST(request: Request) {
   try {
-    const user = await currentUser();
+    const { userId: clerkId } = await auth();
 
-    if (!user) {
+    if (!clerkId) {
       return NextResponse.json(
         {
           error: "Unauthorized",
@@ -50,7 +50,7 @@ export async function POST(request: Request) {
     const databaseUser = await db
       .select()
       .from(users)
-      .where(eq(users.clerkId, user.id))
+      .where(eq(users.clerkId, clerkId))
       .limit(1);
 
     if (databaseUser.length === 0) {

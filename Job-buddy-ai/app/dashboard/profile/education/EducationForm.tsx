@@ -591,7 +591,7 @@ export default function EducationForm({
 
             <p className="mt-1 text-sm leading-6 text-slate-400">
               Keep your education information accurate and complete.
-              JobBuddy AI can use this information when matching you
+              CareerPath can use this information when matching you
               with relevant opportunities.
             </p>
           </div>

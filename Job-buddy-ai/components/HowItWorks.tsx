@@ -5,6 +5,7 @@ import {
   ChartNoAxesCombined,
   ArrowRight,
   Sparkles,
+  GraduationCap,
 } from "lucide-react";
 
 const steps = [
@@ -17,20 +18,27 @@ const steps = [
   },
   {
     number: "02",
-    icon: Search,
-    title: "Discover Matching Jobs",
+    icon: GraduationCap,
+    title: "Assess Your Skills",
     description:
-      "JobBuddy AI finds relevant opportunities and analyzes how well each job matches your skills and experience.",
+      "Take AI-curated skill tests or generate a custom test on any topic. Get an instant AI progress report with strengths, gaps, and a study roadmap.",
   },
   {
     number: "03",
+    icon: Search,
+    title: "Discover Matching Jobs",
+    description:
+      "CareerPath finds relevant opportunities and analyzes how well each job matches your skills and experience.",
+  },
+  {
+    number: "04",
     icon: Send,
     title: "Apply Smarter",
     description:
       "Review matched jobs and choose whether to apply manually or use supported application automation.",
   },
   {
-    number: "04",
+    number: "05",
     icon: ChartNoAxesCombined,
     title: "Track Everything",
     description:
@@ -105,13 +113,13 @@ export default function HowItWorks() {
             From profile to application
             <br />
             <span className="bg-gradient-to-r from-white via-red-100 to-red-400 bg-clip-text text-transparent">
-              in four simple steps.
+              in five simple steps.
             </span>
           </h2>
 
           {/* Description */}
           <p className="mx-auto mt-7 max-w-3xl text-base leading-8 text-zinc-400 sm:text-lg">
-            JobBuddy AI brings your resume, job discovery, matching,
+            CareerPath brings your resume, skill testing, job discovery, matching,
             applications, and tracking together in one place.
           </p>
         </div>
@@ -127,7 +135,7 @@ export default function HowItWorks() {
           {/* Glowing line center */}
           <div className="pointer-events-none absolute left-[18%] right-[18%] top-[58px] hidden h-px bg-gradient-to-r from-transparent via-red-400/20 to-transparent blur-sm lg:block" />
 
-          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-5">
             {steps.map((step, index) => {
               const Icon = step.icon;
 
@@ -230,7 +238,7 @@ export default function HowItWorks() {
                     <div className="absolute bottom-7 left-7 right-7">
                       <div className="flex items-center justify-between border-t border-white/[0.06] pt-5">
                         <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-zinc-600 transition-colors duration-300 group-hover:text-red-400/70">
-                          JobBuddy AI
+                          CareerPath
                         </span>
 
                         <div className="flex h-7 w-7 items-center justify-center rounded-full border border-white/[0.08] text-zinc-600 transition-all duration-300 group-hover:border-red-500/30 group-hover:bg-red-500/10 group-hover:text-red-400">

@@ -71,7 +71,7 @@ export default function Footer() {
               </div>
 
               <span className="text-2xl font-semibold tracking-tight">
-                JobBuddy{" "}
+                CareerPath{" "}
                 <span className="text-red-500 transition-colors duration-300 group-hover:text-red-400">
                   AI
                 </span>
@@ -104,7 +104,7 @@ export default function Footer() {
             </p>
 
             <h3 className="mt-4 text-lg font-semibold text-white">
-              Explore JobBuddy
+              Explore CareerPath
             </h3>
 
             <ul className="mt-7 space-y-4">
@@ -162,44 +162,55 @@ export default function Footer() {
           {/* Copyright */}
           <div>
             <p className="text-sm text-slate-600">
-              © {new Date().getFullYear()} JobBuddy AI. All rights reserved.
+              © {new Date().getFullYear()} CareerPath AI. All rights reserved.
             </p>
 
             <p className="mt-3 text-[10px] uppercase tracking-[0.25em] text-slate-700">
-              Built for smarter job searching
+              Built for smarter Career Guidance
             </p>
           </div>
 
           {/* Social / external links */}
           <div className="flex items-center gap-3">
             <a
-              href="https://github.com"
+              href="https://github.com/Sumit-Yadav2611"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="GitHub"
+              aria-label="GitHub - Sumit-Yadav2611"
               className="group flex h-12 w-12 items-center justify-center rounded-xl border border-white/[0.08] bg-white/[0.02] text-slate-600 transition-all duration-300 hover:-translate-y-1 hover:border-red-500/40 hover:bg-red-500/[0.06] hover:text-red-400 hover:shadow-[0_8px_30px_rgba(255,40,40,0.12)]"
             >
               <Code2 className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
             </a>
 
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/sumit-yadav-8a8929357/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="LinkedIn"
+              aria-label="LinkedIn - Sumit Yadav"
               className="group flex h-12 w-12 items-center justify-center rounded-xl border border-white/[0.08] bg-white/[0.02] text-slate-600 transition-all duration-300 hover:-translate-y-1 hover:border-red-500/40 hover:bg-red-500/[0.06] hover:text-red-400 hover:shadow-[0_8px_30px_rgba(255,40,40,0.12)]"
             >
               <BriefcaseBusiness className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
             </a>
 
             <a
-              href="https://x.com"
+              href="https://www.youtube.com/@sumitkrishnanitp"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="X / Twitter"
+              aria-label="Sumit Krishna NITp - YouTube"
               className="group flex h-12 w-12 items-center justify-center rounded-xl border border-white/[0.08] bg-white/[0.02] text-slate-600 transition-all duration-300 hover:-translate-y-1 hover:border-red-500/40 hover:bg-red-500/[0.06] hover:text-red-400 hover:shadow-[0_8px_30px_rgba(255,40,40,0.12)]"
             >
-              <Globe className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
+              <svg
+                className="h-5 w-5 transition-transform duration-300 group-hover:scale-110"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+                <polygon points="10 15 15 12 10 9 10 15" fill="currentColor" />
+              </svg>
             </a>
           </div>
         </div>

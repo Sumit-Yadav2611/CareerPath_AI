@@ -127,7 +127,7 @@ export default async function PersonalInformationPage() {
           </h2>
 
           <p className="mt-3 max-w-2xl text-base leading-7 text-slate-400">
-            Update the information JobBuddy AI uses to understand
+            Update the information CareerPath uses to understand
             your professional identity and improve your job matches.
           </p>
         </div>
@@ -152,8 +152,8 @@ export default async function PersonalInformationPage() {
 
             <p className="mt-1 text-xs leading-5 text-slate-500">
               Your profile information is associated with your
-              authenticated JobBuddy AI account and is only used
-              to provide your job-search features.
+              authenticated CareerPath account and is only used
+              to provide your career and job-search features.
             </p>
           </div>
         </div>

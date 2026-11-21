@@ -218,7 +218,7 @@ export default async function SavedJobsPage() {
                 </div>
 
                 <p className="mt-3 text-[10px] text-slate-600">
-                  Saved to your JobBuddy account
+                  Saved to your CareerPath account
                 </p>
               </div>
             </div>

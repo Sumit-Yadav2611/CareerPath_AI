@@ -37,7 +37,7 @@ const getJobs = unstable_cache(
       .orderBy(desc(jobs.createdAt))
       .limit(50);
   },
-  ["jobbuddy-jobs"],
+  ["careerpath-jobs"],
   {
     revalidate: 60,
   },
@@ -160,7 +160,7 @@ export default async function JobsPage() {
             </h2>
 
             <p className="mt-4 max-w-2xl text-sm leading-6 text-slate-500 sm:text-base">
-              Discover jobs collected by JobBuddy AI and matched against your
+              Discover jobs collected by CareerPath and matched against your
               skills, experience, and professional profile.
             </p>
 
@@ -266,7 +266,7 @@ export default async function JobsPage() {
               </h2>
 
               <p className="mt-1 text-sm text-slate-600">
-                Jobs ranked using your JobBuddy AI profile.
+                Jobs ranked using your CareerPath profile.
               </p>
             </div>
 

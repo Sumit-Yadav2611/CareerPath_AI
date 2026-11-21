@@ -438,7 +438,7 @@ export default async function ProfilePage() {
             </h3>
 
             <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-500">
-              Keep your profile updated so JobBuddy AI can find opportunities
+              Keep your profile updated so CareerPath can find opportunities
               that actually fit you.
             </p>
           </div>
@@ -499,7 +499,7 @@ export default async function ProfilePage() {
                 </div>
 
                 <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-500">
-                  Manage your resume and let JobBuddy AI understand your
+                  Manage your resume and let CareerPath understand your
                   experience, skills and career profile.
                 </p>
 

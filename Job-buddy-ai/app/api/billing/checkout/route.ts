@@ -48,9 +48,9 @@ export async function POST() {
             currency: "inr",
 
             product_data: {
-              name: "JobBuddy Premium",
+              name: "CareerPath Premium",
               description:
-                "Advanced AI-powered job search and application assistance.",
+                "Advanced AI-powered career tests, job matching, and application assistance.",
             },
 
             unit_amount: 49900,

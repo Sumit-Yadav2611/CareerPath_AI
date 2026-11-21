@@ -111,7 +111,7 @@ export default function PersonalInformationForm({
               </h2>
 
               <p className="mt-1 text-sm leading-6 text-slate-400">
-                Keep your professional details accurate so JobBuddy AI
+                Keep your professional details accurate so CareerPath
                 can generate better job matches.
               </p>
             </div>
@@ -269,7 +269,7 @@ export default function PersonalInformationForm({
 
           <div className="mt-8 flex flex-col gap-4 border-t border-white/5 pt-6 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-xs leading-5 text-slate-500">
-              Your information is securely stored in your JobBuddy AI
+              Your information is securely stored in your CareerPath
               profile.
             </p>
 

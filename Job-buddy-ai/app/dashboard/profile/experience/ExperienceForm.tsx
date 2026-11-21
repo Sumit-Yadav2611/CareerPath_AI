@@ -310,7 +310,7 @@ export default function ExperienceForm({
           </h3>
 
           <p className="mx-auto mt-2 max-w-md text-sm text-slate-400">
-            Add your work experience so JobBuddy AI can better
+            Add your work experience so CareerPath can better
             understand your professional background.
           </p>
 
@@ -567,7 +567,7 @@ export default function ExperienceForm({
             Tip:
           </span>{" "}
           Highlight measurable achievements and technologies
-          you used. This information helps JobBuddy AI match you
+          you used. This information helps CareerPath match you
           with relevant opportunities.
         </div>
       )}

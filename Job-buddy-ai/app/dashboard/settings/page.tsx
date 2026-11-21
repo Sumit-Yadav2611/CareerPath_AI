@@ -378,7 +378,7 @@ export default async function SettingsPage() {
             icon={UserRound}
             eyebrow="PROFILE"
             title="Professional Profile"
-            description="Keep your professional information up to date so JobBuddy AI can find better opportunities for you."
+            description="Keep your professional information up to date so CareerPath can find better opportunities for you."
             items={[
               {
                 label: "Personal information",
@@ -474,8 +474,8 @@ export default async function SettingsPage() {
                 </h3>
 
                 <p className="mt-1 max-w-xl text-sm leading-6 text-slate-400">
-                  A complete profile gives JobBuddy AI more context to
-                  calculate accurate job matches and recommendations.
+                  A complete profile gives CareerPath more context to
+                  calculate accurate job matches and skill test recommendations.
                 </p>
               </div>
             </div>

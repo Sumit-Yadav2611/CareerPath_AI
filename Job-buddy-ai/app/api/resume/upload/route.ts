@@ -1,13 +1,12 @@
 export const runtime = "nodejs";
 import { NextResponse } from "next/server";
-import { currentUser } from "@clerk/nextjs/server";
+import { auth, currentUser } from "@clerk/nextjs/server";
 import { eq } from "drizzle-orm";
 
 import { db } from "@/lib/db";
 import { users, resumes } from "@/lib/db/schema";
+import { syncUser } from "@/lib/db/user-sync";
 import { extractResumeText } from "@/lib/resume/extractText";
-
-
 
 const MAX_FILE_SIZE = 5 * 1024 * 1024;
 
@@ -18,66 +17,41 @@ const ALLOWED_TYPES = [
 
 export async function POST(request: Request) {
   try {
+    // Use auth() first (session token) — works reliably with middleware
+    const { userId: clerkId } = await auth();
+
+    if (!clerkId) {
+      return NextResponse.json(
+        { error: "Unauthorized. Please sign in to upload your resume." },
+        { status: 401 }
+      );
+    }
+
+    // Get full user object for email
     const user = await currentUser();
-
-    if (!user) {
-      return NextResponse.json(
-        {
-          error: "Unauthorized",
-        },
-        {
-          status: 401,
-        }
-      );
-    }
-
-    const email = user.emailAddresses[0]?.emailAddress;
-
-    if (!email) {
-      return NextResponse.json(
-        {
-          error: "User email not found.",
-        },
-        {
-          status: 400,
-        }
-      );
-    }
+    const email = user?.emailAddresses[0]?.emailAddress ?? "";
 
     const formData = await request.formData();
-
     const file = formData.get("file");
 
     if (!(file instanceof File)) {
       return NextResponse.json(
-        {
-          error: "No resume file provided.",
-        },
-        {
-          status: 400,
-        }
+        { error: "No resume file provided." },
+        { status: 400 }
       );
     }
 
     if (!ALLOWED_TYPES.includes(file.type)) {
       return NextResponse.json(
-        {
-          error: "Only PDF and DOCX files are supported.",
-        },
-        {
-          status: 400,
-        }
+        { error: "Only PDF and DOCX files are supported." },
+        { status: 400 }
       );
     }
 
     if (file.size > MAX_FILE_SIZE) {
       return NextResponse.json(
-        {
-          error: "Resume must be smaller than 5 MB.",
-        },
-        {
-          status: 400,
-        }
+        { error: "Resume must be smaller than 5 MB." },
+        { status: 400 }
       );
     }
 
@@ -89,31 +63,38 @@ export async function POST(request: Request) {
           error:
             "Could not extract text from this resume. Please upload a text-based PDF or DOCX.",
         },
-        {
-          status: 400,
-        }
+        { status: 400 }
       );
     }
 
-    const existingUser = await db
+    // Find or auto-sync user record
+    let databaseUser: typeof users.$inferSelect | undefined;
+    const existing = await db
       .select()
       .from(users)
-      .where(eq(users.clerkId, user.id))
+      .where(eq(users.clerkId, clerkId))
       .limit(1);
 
-    if (existingUser.length === 0) {
+    if (existing.length > 0) {
+      databaseUser = existing[0];
+    } else if (email) {
+      databaseUser = await syncUser({
+        id: clerkId,
+        email,
+        firstName: user?.firstName,
+        lastName: user?.lastName,
+      });
+    }
+
+    if (!databaseUser) {
       return NextResponse.json(
         {
           error:
-            "User account has not been synchronized with the database yet.",
+            "User account has not been synchronized yet. Please wait a moment and try again.",
         },
-        {
-          status: 400,
-        }
+        { status: 400 }
       );
     }
-
-    const databaseUser = existingUser[0];
 
     const [resume] = await db
       .insert(resumes)
@@ -139,12 +120,8 @@ export async function POST(request: Request) {
     console.error("Resume upload error:", error);
 
     return NextResponse.json(
-      {
-        error: "Failed to process resume.",
-      },
-      {
-        status: 500,
-      }
+      { error: "Failed to process resume." },
+      { status: 500 }
     );
   }
 }
