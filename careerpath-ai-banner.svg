@@ -1,0 +1,269 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#180509" />
+      <stop offset="55%" stop-color="#090204" />
+      <stop offset="100%" stop-color="#020102" />
+    </radialGradient>
+    
+    <radialGradient id="redGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#dc2626" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#991b1b" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="botGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#f43f5e" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#991b1b" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#fee2e2" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18070d" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0a0305" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="botRedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fca5a5" />
+      <stop offset="45%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="35%" stop-color="#fee2e2" />
+      <stop offset="70%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#991b1b" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="techGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ef4444" stroke-width="0.75" stroke-opacity="0.08" />
+    </pattern>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="520" fill="url(#bgGrad)" />
+  <rect width="1200" height="520" fill="url(#techGrid)" />
+  
+  <!-- Glowing Orbs -->
+  <circle cx="280" cy="220" r="320" fill="url(#redGlow)" />
+  <circle cx="940" cy="240" r="280" fill="url(#botGlow)" />
+
+  <!-- Outer Tech Border -->
+  <rect x="15" y="15" width="1170" height="490" rx="20" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-opacity="0.25" />
+  <rect x="25" y="25" width="1150" height="470" rx="14" fill="none" stroke="#ffffff" stroke-width="0.75" stroke-opacity="0.05" />
+
+  <!-- Corner Brackets -->
+  <path d="M 15 45 L 15 15 L 45 15" stroke="#ef4444" stroke-width="3" fill="none" />
+  <path d="M 1185 45 L 1185 15 L 1155 15" stroke="#ef4444" stroke-width="3" fill="none" />
+  <path d="M 15 475 L 15 505 L 45 505" stroke="#ef4444" stroke-width="3" fill="none" />
+  <path d="M 1185 475 L 1185 505 L 1155 505" stroke="#ef4444" stroke-width="3" fill="none" />
+
+  <!-- ==========================================
+       LEFT SIDE: BRANDING, TITLE, VALUE PROP
+  =========================================== -->
+  <g transform="translate(70, 70)">
+    <!-- Eyebrow Pill Badge -->
+    <rect x="0" y="0" width="280" height="30" rx="15" fill="#ef4444" fill-opacity="0.12" stroke="#ef4444" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="16" cy="15" r="4.5" fill="#ef4444" />
+    <circle cx="16" cy="15" r="2" fill="#ffffff" />
+    <text x="30" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#fca5a5">
+      INDIA'S AI CAREER OPERATING SYSTEM
+    </text>
+
+    <!-- Main Title -->
+    <text x="0" y="85" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="52" font-weight="900" letter-spacing="-1" fill="url(#textGrad)">
+      CareerPath AI
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" fill="#f87171">
+      Build Your AI Career — Step by Step.
+    </text>
+
+    <text x="0" y="156" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="400" fill="#a1a1aa">
+      From AI Resume Analysis &amp; 360+ Interview Q&amp;A to Adaptive Skill Tests
+    </text>
+    <text x="0" y="178" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="400" fill="#a1a1aa">
+      and Automated Job Matching — Directed by your Personal AI Career Coach.
+    </text>
+
+    <!-- 4 Key Core Value Pillars -->
+    <g transform="translate(0, 210)">
+      <!-- Pillar 1: Tests -->
+      <g transform="translate(0, 0)">
+        <rect width="130" height="42" rx="10" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="1" stroke-opacity="0.3" />
+        <text x="14" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#fca5a5">🎯 Skill Tests</text>
+      </g>
+      <!-- Pillar 2: Interview -->
+      <g transform="translate(142, 0)">
+        <rect width="145" height="42" rx="10" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="1" stroke-opacity="0.3" />
+        <text x="14" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#fca5a5">💬 Interview Prep</text>
+      </g>
+      <!-- Pillar 3: Resume -->
+      <g transform="translate(299, 0)">
+        <rect width="145" height="42" rx="10" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="1" stroke-opacity="0.3" />
+        <text x="14" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#fca5a5">📄 Resume AI</text>
+      </g>
+      <!-- Pillar 4: Jobs -->
+      <g transform="translate(456, 0)">
+        <rect width="135" height="42" rx="10" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="1" stroke-opacity="0.3" />
+        <text x="14" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#fca5a5">⚡ Job Match</text>
+      </g>
+    </g>
+
+    <!-- Tech Stack Pills -->
+    <g transform="translate(0, 280)">
+      <text x="0" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" fill="#71717a">POWERED BY</text>
+      <g transform="translate(90, 0)">
+        <!-- Next.js -->
+        <rect x="0" y="0" width="76" height="22" rx="6" fill="#18181b" stroke="#3f3f46" stroke-width="0.8" />
+        <text x="38" y="15" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#e4e4e7">Next.js 16</text>
+        
+        <!-- React 19 -->
+        <rect x="84" y="0" width="70" height="22" rx="6" fill="#18181b" stroke="#3f3f46" stroke-width="0.8" />
+        <text x="119" y="15" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#e4e4e7">React 19</text>
+
+        <!-- TypeScript -->
+        <rect x="162" y="0" width="85" height="22" rx="6" fill="#18181b" stroke="#3f3f46" stroke-width="0.8" />
+        <text x="204" y="15" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#e4e4e7">TypeScript</text>
+
+        <!-- Gemini AI -->
+        <rect x="255" y="0" width="88" height="22" rx="6" fill="#2d0d14" stroke="#ef4444" stroke-width="0.8" />
+        <text x="299" y="15" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#fca5a5">Gemini AI</text>
+
+        <!-- Clerk -->
+        <rect x="351" y="0" width="56" height="22" rx="6" fill="#18181b" stroke="#3f3f46" stroke-width="0.8" />
+        <text x="379" y="15" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#e4e4e7">Clerk</text>
+
+        <!-- Neon DB -->
+        <rect x="415" y="0" width="90" height="22" rx="6" fill="#18181b" stroke="#3f3f46" stroke-width="0.8" />
+        <text x="460" y="15" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#e4e4e7">Neon Postgres</text>
+      </g>
+    </g>
+
+    <!-- Author & GitHub Badge -->
+    <g transform="translate(0, 330)">
+      <text x="0" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#a1a1aa">
+        Engineered by <tspan font-weight="700" fill="#ffffff">Sumit Yadav</tspan> • NIT Patna
+      </text>
+    </g>
+  </g>
+
+  <!-- ==========================================
+       RIGHT SIDE: 3D CYBERPUNK AI ROBOT & CARDS
+  =========================================== -->
+  <g transform="translate(930, 235)">
+    <!-- Aura Rings -->
+    <circle cx="0" cy="0" r="160" fill="none" stroke="#ef4444" stroke-width="1.2" stroke-opacity="0.2" stroke-dasharray="4 4" />
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#ef4444" stroke-width="1" stroke-opacity="0.3" />
+
+    <!-- AI Bot Wireframe Head & Visor -->
+    <g transform="translate(0, -25)">
+      <!-- Left Ear Pod -->
+      <ellipse cx="-65" cy="-10" rx="12" ry="16" fill="#120409" stroke="#ef4444" stroke-width="1.5" />
+      <circle cx="-65" cy="-10" r="4" fill="#ef4444" />
+      
+      <!-- Right Ear Pod -->
+      <ellipse cx="65" cy="-10" rx="12" ry="16" fill="#120409" stroke="#ef4444" stroke-width="1.5" />
+      <circle cx="65" cy="-10" r="4" fill="#ef4444" />
+
+      <!-- Head Dome Shell -->
+      <ellipse cx="0" cy="-10" rx="68" ry="58" fill="#120409" stroke="url(#botRedGrad)" stroke-width="2" />
+
+      <!-- Wireframe Latitudes -->
+      <path d="M -55 -25 Q 0 -45 55 -25" stroke="#f87171" stroke-width="0.8" stroke-opacity="0.6" fill="none" />
+      <path d="M -60 -5 Q 0 -20 60 -5" stroke="#f87171" stroke-width="0.8" stroke-opacity="0.6" fill="none" />
+      <path d="M -50 20 Q 0 35 50 20" stroke="#f87171" stroke-width="0.8" stroke-opacity="0.6" fill="none" />
+
+      <!-- Wireframe Longitudes -->
+      <path d="M 0 -68 V 48" stroke="#f87171" stroke-width="0.8" stroke-opacity="0.7" fill="none" />
+      <path d="M -30 -60 Q -42 -10 -30 40" stroke="#f87171" stroke-width="0.7" stroke-opacity="0.5" fill="none" />
+      <path d="M 30 -60 Q 42 -10 30 40" stroke="#f87171" stroke-width="0.7" stroke-opacity="0.5" fill="none" />
+
+      <!-- Visor Faceplate -->
+      <rect x="-48" y="-32" width="96" height="46" rx="22" fill="#040103" stroke="#ef4444" stroke-width="1.5" />
+
+      <!-- Glowing Eyes -->
+      <g>
+        <circle cx="-24" cy="-9" r="16" fill="url(#eyeGlow)" />
+        <circle cx="-24" cy="-9" r="10" fill="#ffffff" />
+        <circle cx="-27" cy="-12" r="3" fill="#ffffff" />
+      </g>
+      <g>
+        <circle cx="24" cy="-9" r="16" fill="url(#eyeGlow)" />
+        <circle cx="24" cy="-9" r="10" fill="#ffffff" />
+        <circle cx="21" cy="-12" r="3" fill="#ffffff" />
+      </g>
+
+      <!-- Neck Joint -->
+      <rect x="-10" y="48" width="20" height="7" rx="2" fill="#27272a" stroke="#ef4444" stroke-width="1" />
+
+      <!-- Heart / Torso Body -->
+      <path d="M -30 55 C -30 55 -40 95 0 120 C 40 95 30 55 30 55 Z" fill="#120409" stroke="url(#botRedGrad)" stroke-width="1.8" />
+      <path d="M -30 55 L 0 80 L 30 55" stroke="#f87171" stroke-width="0.8" stroke-opacity="0.6" fill="none" />
+      <circle cx="0" cy="76" r="4.5" fill="#ef4444" />
+      <circle cx="0" cy="76" r="2" fill="#ffffff" />
+
+      <!-- Waving Right Hand -->
+      <path d="M 32 60 Q 60 55 74 30 Q 64 24 45 48 Z" fill="#120409" stroke="url(#botRedGrad)" stroke-width="1.5" />
+      <ellipse cx="74" cy="26" rx="7" ry="9" fill="#120409" stroke="#fca5a5" stroke-width="1.2" transform="rotate(25 74 26)" />
+
+      <!-- Left Hand -->
+      <path d="M -32 60 Q -55 75 -58 100 Q -45 96 -34 76 Z" fill="#120409" stroke="url(#botRedGrad)" stroke-width="1.5" />
+
+      <!-- Thruster Jet Flame & Sparkles -->
+      <ellipse cx="0" cy="126" rx="10" ry="5" fill="#ef4444" />
+      <circle cx="0" cy="138" r="2.5" fill="#fca5a5" />
+      <circle cx="0" cy="148" r="1.5" fill="#ffffff" />
+    </g>
+
+    <!-- Floating Feature Bubble 1: Top Right (Interview Coach) -->
+    <g transform="translate(70, -170)">
+      <rect width="175" height="52" rx="12" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="1" stroke-opacity="0.4" />
+      <circle cx="22" cy="26" r="10" fill="#a855f7" fill-opacity="0.2" />
+      <text x="22" y="30" text-anchor="middle" font-size="11">💬</text>
+      <text x="40" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#c084fc">INTERVIEW COACH</text>
+      <text x="40" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#ffffff">360+ AI Q&amp;A Tested</text>
+      <text x="40" y="45" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="400" fill="#71717a">Real-time Model Scoring</text>
+    </g>
+
+    <!-- Floating Feature Bubble 2: Top Left (Skill Assessment) -->
+    <g transform="translate(-240, -150)">
+      <rect width="170" height="52" rx="12" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="1" stroke-opacity="0.4" />
+      <circle cx="22" cy="26" r="10" fill="#ef4444" fill-opacity="0.2" />
+      <text x="22" y="30" text-anchor="middle" font-size="11">🎯</text>
+      <text x="40" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#f87171">SKILL ASSESSMENT</text>
+      <text x="40" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#ffffff">Score: 92/100 • Advanced</text>
+      <text x="40" y="45" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="400" fill="#71717a">Verified Career Readiness</text>
+    </g>
+
+    <!-- Floating Feature Bubble 3: Bottom Left (Resume Intelligence) -->
+    <g transform="translate(-230, 95)">
+      <rect width="175" height="52" rx="12" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="1" stroke-opacity="0.4" />
+      <circle cx="22" cy="26" r="10" fill="#10b981" fill-opacity="0.2" />
+      <text x="22" y="30" text-anchor="middle" font-size="11">📄</text>
+      <text x="40" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#34d399">RESUME PARSING</text>
+      <text x="40" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#ffffff">14 Skills &amp; Projects</text>
+      <text x="40" y="45" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="400" fill="#71717a">ATS Optimized Format</text>
+    </g>
+
+    <!-- Floating Feature Bubble 4: Bottom Right (Job Matching) -->
+    <g transform="translate(60, 110)">
+      <rect width="165" height="52" rx="12" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="1" stroke-opacity="0.4" />
+      <circle cx="22" cy="26" r="10" fill="#06b6d4" fill-opacity="0.2" />
+      <text x="22" y="30" text-anchor="middle" font-size="11">⚡</text>
+      <text x="40" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#22d3ee">TOP JOB MATCH</text>
+      <text x="40" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#ffffff">96% Match Accuracy</text>
+      <text x="40" y="45" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="400" fill="#71717a">1-Click Fast Apply</text>
+    </g>
+  </g>
+</svg>
