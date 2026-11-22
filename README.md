@@ -73,43 +73,41 @@ Rather than juggling fragmented tools for resume editing, interview prep, skill 
 
 ---
 
-## 📁 Repository Structure
+## 📁 Project Architecture & Modular Folder Structure
+
+CareerPath AI is organized into clearly separated architectural domains:
 
 ```text
 CareerPath_AI/
 ├── README.md                          # Repository documentation
 ├── careerpath-ai-banner.svg           # High-resolution cyberpunk banner
-└── Job-buddy-ai/                      # Next.js 16 full-stack application root
-    ├── app/
-    │   ├── api/
-    │   │   ├── interview/             # AI mock interview & topics API routes
-    │   │   ├── tests/                 # AI skill assessments & test generation APIs
-    │   │   ├── resume/                # PDF/DOCX parsing & Gemini analysis APIs
-    │   │   ├── jobs/                  # Job discovery, sync & matching APIs
-    │   │   └── billing/               # Stripe checkout & webhook routes
-    │   ├── dashboard/
-    │   │   ├── interview/             # Interview prep & live mock interview UI
-    │   │   ├── tests/                 # Skill tests list, test taker & results UI
-    │   │   ├── resume/                # Resume upload & analysis workspace
-    │   │   ├── jobs/                  # Job search & skill-matching explorer
-    │   │   ├── applications/          # Application tracker
-    │   │   └── profile/               # Candidate profile forms
-    │   ├── page.tsx                   # Landing page with CareerPath AI Bot Hero
+└── careerpath-ai/                     # Main full-stack application root
+    │
+    ├── 📁 backend/                    # Server-side architecture & database
+    │   ├── db/                        # Neon PostgreSQL & Drizzle ORM schema, index, seed & user-sync
+    │   ├── services/                  # Business logic (job sync, matching engine, Stripe billing)
+    │   ├── proxy.ts                   # Clerk auth proxy & JWT clock-skew synchronization
+    │   └── README.md                  # Backend architecture documentation
+    │
+    ├── 📁 ai-resume/                  # AI Resume & Career Intelligence Engine
+    │   ├── resume/                    # Multi-format parser (PDF/DOCX) & Gemini 2.5 ATS analyzer
+    │   ├── interview/                 # 360+ curated questions & interactive AI mock interviewer
+    │   ├── tests/                     # Curated domain tests & Gemini dynamic assessment generator
+    │   └── README.md                  # AI engine & prompt architecture documentation
+    │
+    ├── 📁 frontend/                   # Client-side UI & design system
+    │   ├── components/                # Reusable UI widgets, dashboard panels, hero & navigation
+    │   └── README.md                  # Frontend components documentation
+    │
+    ├── 📁 app/                        # Next.js 16 App Router
+    │   ├── api/                       # REST API route handlers (connecting frontend to backend/ai)
+    │   ├── dashboard/                 # Interactive dashboard workspaces (tests, interview, resume, jobs)
+    │   ├── page.tsx                   # Landing page featuring CareerPathAiBotHero
     │   └── layout.tsx                 # Root layout with ClerkProvider & metadata
-    ├── components/
-    │   ├── hero/
-    │   │   └── CareerPathAiBotHero.tsx# Floating Cyberpunk AI Bot & orbiting cards
-    │   ├── dashboard/                 # Sidebar, navigation & dashboard widgets
-    │   ├── Navbar.tsx                 # Main header navigation
-    │   └── Footer.tsx                 # Footer with developer links & brand info
-    ├── lib/
-    │   ├── interview/                 # Curated topics, mock interview AI prompts
-    │   ├── tests/                     # Curated tests & Gemini analysis engine
-    │   ├── resume/                    # Resume parsing & scoring utilities
-    │   └── db/                        # Drizzle schema & Neon database connection
-    ├── public/                        # Static assets, icons & graphics
-    ├── proxy.ts                       # Clerk proxy convention (Next.js 16 compliant)
-    ├── package.json                   # Dependencies and npm scripts
+    │
+    ├── 📁 public/                     # Static assets, icons, SVG banners & media
+    ├── package.json                   # Dependencies & npm scripts
+    ├── tsconfig.json                  # Path aliases (@backend/*, @ai-resume/*, @frontend/*)
     └── .env.example                   # Environment variables template
 ```
 
@@ -127,7 +125,7 @@ CareerPath_AI/
 ### 2. Clone the Repository
 ```bash
 git clone https://github.com/Sumit-Yadav2611/CareerPath_AI.git
-cd CareerPath_AI/Job-buddy-ai
+cd CareerPath_AI/careerpath-ai
 ```
 
 ### 3. Install Dependencies
@@ -136,7 +134,7 @@ npm install
 ```
 
 ### 4. Configure Environment Variables
-Create `.env.local` inside the `Job-buddy-ai/` directory:
+Create `.env.local` inside the `careerpath-ai/` directory:
 ```env
 # Clerk Authentication
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
@@ -176,7 +174,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 2. Select your repository: **`Sumit-Yadav2611/CareerPath_AI`**.
 3. **Configure Root Directory**:
    - In the project setup, click **Edit** next to **Root Directory**.
-   - Select **`Job-buddy-ai`** and click **Continue**.
+   - Select **`careerpath-ai`** and click **Continue**.
 4. **Add Environment Variables**:
    - Add `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`, `CLERK_SECRET_KEY`, `DATABASE_URL`, `GEMINI_API_KEY`, and `NEXT_PUBLIC_APP_URL`.
 5. Click **Deploy**. Vercel will build the Next.js app and provide your live production URL.
