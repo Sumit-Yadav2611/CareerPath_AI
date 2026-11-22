@@ -143,7 +143,7 @@ NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
 CLERK_SECRET_KEY=sk_test_...
 
 # Neon PostgreSQL Database
-DATABASE_URL=postgresql://user:password@ep-xyz.region.neon.tech/careerpath?sslmode=require
+DATABASE_URL=
 
 # Google Gemini AI
 GEMINI_API_KEY=AIzaSy...
@@ -153,8 +153,8 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 
 # Stripe (Optional)
 STRIPE_SECRET_KEY=sk_test_...
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
-STRIPE_WEBHOOK_SECRET=whsec_...
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+STRIPE_WEBHOOK_SECRET=
 ```
 
 ### 5. Push Database Schema
