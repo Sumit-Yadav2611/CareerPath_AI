@@ -36,22 +36,27 @@ export default async function DashboardPage() {
     throw new Error("Authenticated user does not have an email address.");
   }
 
-  await syncUser({
-    id: user.id,
-    email,
-    firstName: user.firstName,
-    lastName: user.lastName,
-  });
+  let dbUser: (typeof users.$inferSelect) | null = null;
+  try {
+    await syncUser({
+      id: user.id,
+      email,
+      firstName: user.firstName,
+      lastName: user.lastName,
+    });
 
-  // =======================================================
-  // Database user
-  // =======================================================
-
-  const [dbUser] = await db
-    .select()
-    .from(users)
-    .where(eq(users.clerkId, user.id))
-    .limit(1);
+    // =======================================================
+    // Database user
+    // =======================================================
+    const [foundUser] = await db
+      .select()
+      .from(users)
+      .where(eq(users.clerkId, user.id))
+      .limit(1);
+    dbUser = foundUser || null;
+  } catch (dbErr) {
+    console.error("Dashboard user database sync warning:", dbErr);
+  }
 
   /*
    * The dashboard greeting should use the first name saved

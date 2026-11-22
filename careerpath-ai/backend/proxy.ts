@@ -1,7 +1,24 @@
-import { clerkMiddleware } from "@clerk/nextjs/server";
+import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
-export default clerkMiddleware({
-  // Tolerate clock skews between local machine and Clerk auth servers (up to 60s)
+const isPublicRoute = createRouteMatcher([
+  "/",
+  "/login(.*)",
+  "/signup(.*)",
+  "/about(.*)",
+  "/pricing(.*)",
+  "/privacy(.*)",
+  "/terms(.*)",
+  "/api/billing/webhook(.*)",
+]);
+
+export default clerkMiddleware(async (auth, req) => {
+  if (!isPublicRoute(req)) {
+    await auth.protect({
+      unauthenticatedUrl: new URL("/login", req.url).toString(),
+    });
+  }
+}, {
+  // Tolerate clock skews between local machine, Vercel edge and Clerk servers (up to 60s)
   clockSkewInMs: 60000,
 });
 
